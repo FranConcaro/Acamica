@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifOS</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="main">
+    <header>
+        <div class="banner">
+            <p> ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <nav>
+            <img class="logo" src="assets/gifOF_logo.png" alt="logo">
+            <div class="botones-nav">
+                <button onclick="location.href='create.html'" class="btn">crear guifos</button>
+                <button id="btn-tema" class="btn-tema" onclick="toggleMenu()">elegir tema</button>
+                <button class="btn-dropdown" onmouseover="hovered();" onclick="toggleMenu()"><img
+                        src="assets/dropdown.svg" alt="flecha abajo"></button>
+                <div class="list-container" id="mobilemenu">
+                    <ul class="list">
+                        <li onclick="closeMenu()"><button class="boton-lista"><span>s</span>ailor day</button></li>
+                        <li onclick="closeMenu()"><button class="boton-lista"><span>s</span>ailor night</button></li>
+                    </ul>
+                </div>
+
+                <a class="link" href=""><span>m</span>is guifos</a>
+            </div>
+        </nav>
+
+    </header>
+    <section class="searchbox-container">
+        <div class="inactive-searchbox">
+            <div class="searchbox-banner"> &nbsp; buscar</div>
+            <div class="searchbox">
+                <input class="buscador" id="input-box" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
+                    type="search">
+                <button class="buscar" id="buscar">
+                    <img id="lupa" src="assets/lupa_inactive.svg" alt="lupa">
+                    &nbsp; buscar
+                </button>
+            </div>
+
+        </div>
+        <div id="sb-display" class="searchbox-display">
+            <div>&nbsp; resultado 1</div>
+            <div>&nbsp; resultado 1</div>
+            <div>&nbsp; resultado 1</div>
+        </div>
+
+    </section>
+    <section class="resultados">
+        <div class="sug-bar">Hoy te sugerimos:</div>
+        <div class="sug-container">
+
+            <div class="content">
+                <div class="searchbox-banner">#cat<img src="assets/button_close.svg" class="close-button" alt=""></div>
+                <img class="img" src="" >
+                <div class="content-button">ver más...</div>
+            </div>
+
+            <div class="content">
+                <div class="searchbox-banner">#morecat<img src="assets/button_close.svg" class="close-button" alt="">
+                </div>
+                <img class="img" src="" alt="">
+                <div class="content-button">ver más...</div>
+            
+            </div>
+
+            <div class="content">
+                <div class="searchbox-banner">#mostcat<img src="assets/button_close.svg" class="close-button" alt="">
+                </div>
+                <img class="img" src="" alt="">
+                <div class="content-button">ver más...</div>
+            </div>
+
+            <div class="content">
+                <div class="searchbox-banner">#cats4everyone<img src="assets/button_close.svg" class="close-button" alt="">
+                </div><img class="img" src="" alt="">
+                <div class="content-button">ver más...</div>
+            </div>
+
+        </div>
+
+        <div class="tend-bar">Tendencias:</div>
+        <div class="gif-container" id="gifContainer">
+
+        
+
+
+
+
+
+
+        </div>   
+      
+    </section>
+
+<section class="resultados-busqueda">
+    <div class="res-bar" id="resultBar"></div>
+
+    <div class="gif-container" id="searchResContainer">
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

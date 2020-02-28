@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crear guifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <p> ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+    </header>
+    <nav class="create-nav">
+        <a href="index.html"><img class="arrow" src="assets\arrow.svg" alt="return"></a>
+        <img class="create-logo" src="assets/gifOF_logo.png" alt="logo">
+    </nav>
+
+    <div class="main-window">
+        <div class="searchbox-gifos-banner">crear guifos</div>
+        <div id="instructions-window">
+            <div class="win-img-container">
+                <img class="window" src="assets\window img.png" alt="window">
+            </div>
+            <div class="instruct-container">
+                <h2 class="instruct-title">Aquí podrás crear tus propios guifos</h2>
+                <p class="window-paragraph">Crear tu <span>guifo</span> es muy fácil, graba cualquier imagen con tu
+                    cámara y
+                    obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+                <ol>
+                    <li><span>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</span></li>
+                    <li><span>Capturar tu momento guifo</span></li>
+                    <li><span>Revisar el momento</span></li>
+                    <li><span>Listo para subir y compartir!</span></li>
+                </ol>
+                <p class="window-paragraph">¿Quieres comenzar a crear tu <span>guifo</span> ahora?</p>
+
+            </div>
+            <div class="btn-container">
+                <button class="btn-cancel">Cancelar</button>
+                <button id="start" class="btn">Comenzar</button>
+            </div>
+        </div>
+
+        <div class="video-container">
+
+            <video id="video" autoplay></video>
+
+
+        </div>
+
+
+
+    </div>
+<script async src="capture.js"></script>
+</body>
+
+</html>

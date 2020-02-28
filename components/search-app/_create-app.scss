@@ -1,0 +1,107 @@
+.main-window {
+  height: max-content;
+  width: 50%;
+  background-color: $searchbox-bg-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 0%);
+}
+    .searchbox-gifos-banner {
+      display: flex;
+      flex-direction: column;
+      background-image: $gradient-color;
+      width: 100%;
+      height: 24px;
+      justify-content: space-around;
+      @include chakra-bold;
+      color: $banner-font-color;
+      text-transform: capitalize;
+    }
+    .win-img-container {
+      display: flex;
+      flex-direction: column;
+      height: 0;
+      .window {
+        margin: 7% 3% 0% 4%;
+        height: 32px;
+        width: 32px;
+      }
+    }
+    .instruct-container {
+      width: 81%;
+      margin: 7% 0 0 12%;
+      .instruct-title {
+        @include chakra-bold;
+        font-size: 16px;
+        color: $searchbox-font-color;
+        line-height: 22px;
+        height: 22px;
+        margin-top: 7%;
+      }
+      .window-paragraph {
+        @include chakra-regular;
+        font-size: 14px;
+        color: $searchbox-font-color;
+        line-height: 20px;
+  
+        span {
+          font-weight: bold;
+        }
+      }
+      ol {
+        counter-reset: list;
+        padding: 0;
+      }
+      ol > li {
+        list-style: none;
+        margin-bottom: 16px;
+  
+        @include chakra-regular;
+        font-size: 14px;
+        font-weight: bold;
+        span {
+          font-weight: normal;
+        }
+      }
+      ol > li:before {
+        content: counter(list) ") ";
+        counter-increment: list;
+      }
+    }
+
+.btn-container {
+  padding: 0 2% 2% 0;
+  display: flex;
+  justify-content: flex-end;
+  .btn-cancel {
+    @include boton(144px);
+    background-color: $bg-color;
+    margin: 0 2% 0 35%;
+    &:hover {
+      outline: 1px dashed #110038;
+
+      outline-offset: -4px;
+    }
+  }
+  .btn {
+    @include boton(144px);
+    &:hover {
+      outline: 1px dashed #110038;
+
+      outline-offset: -4px;
+    }
+  }
+}
+
+#instructions-window{
+display: block;
+}
+
+
+.video-container{
+display: none;
+
+
+
+
+}

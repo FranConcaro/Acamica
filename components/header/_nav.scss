@@ -1,0 +1,163 @@
+nav {
+  padding: 4% 0% 4% 9.8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  .logo {
+    height: 64px;
+    width: 102.6px;
+    margin: 0 35% 0 0px;
+  }
+  .botones-nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .btn {
+      @include boton(144px);
+      &:hover {
+        outline: 1px dashed #110038;
+
+        outline-offset: -4px;
+      }
+    }
+    .btn-tema {
+      @include boton(131px);
+      &:hover {
+        outline: 1px dashed #110038;
+
+        outline-offset: -4px;
+      }
+      &:hover ~ .btn-dropdown {
+        outline: 1px dashed #110038;
+
+        outline-offset: -4px;
+      }
+      margin-left: 20px;
+    }
+    .list-container {
+      align-items: flex-start;
+
+      display: none;
+      transition: max-height 0.5s ease-out;
+
+      .list {
+        position: absolute;
+        top: 59%;
+        width: 151px;
+        right: 26.4%;
+        padding: 2%;
+        margin: 0;
+        background: #e6e6e6;
+        box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+
+        li {
+          list-style-type: none;
+          .boton-lista {
+            @include boton(150px);
+            text-align: left;
+            background: $btn-lista-color;
+            border: 1px solid #808080;
+            box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+            &:focus {
+              background: $btn-lista-color-focus;
+              border: 1px solid #cca6c9;
+              box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+              span {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .open {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      transition: max-height 0.5s ease-out;
+
+      .list {
+        position: absolute;
+        top: 59%;
+        width: 151px;
+        right: 26.4%;
+        padding: 2%;
+        margin: 0;
+        background: #e6e6e6;
+        box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+
+        li {
+          list-style-type: none;
+          .boton-lista {
+            @include boton(150px);
+            text-align: left;
+            background: $btn-lista-color;
+            border: 1px solid #808080;
+            box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+            &:focus {
+              background: $btn-lista-color-focus;
+              border: 1px solid #cca6c9;
+              box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+              span {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn-dropdown {
+    @include boton(36px);
+    &:hover {
+      outline: 1px dashed #110038;
+
+      outline-offset: -4px;
+    }
+  }
+  .link {
+    @include chakra-regular;
+    text-align: center;
+    height: 40px;
+    width: 120px;
+    line-height: 35px;
+    text-transform: capitalize;
+    span {
+      text-decoration: underline;
+    }
+    &:hover {
+      outline: 1px dashed #110038;
+
+      outline-offset: -4px;
+    }
+    &:active {
+      outline: none;
+      color: #b4b4b4;
+    }
+  }
+}
+
+//*---------------------
+.create-nav {
+  padding: 4% 0% 4% 3.7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 85%;
+  a {
+    margin: 1.5% 3% 0 0;
+    .arrow {
+      height: 36px;
+      width: 36px;
+    }
+  }
+  .create-logo {
+    height: 64px;
+    width: 102.6px;
+  }
+}
